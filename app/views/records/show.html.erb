@@ -1,0 +1,20 @@
+<center>
+<p>
+  <strong>Date:</strong>
+  <%= @record.date %>
+</p>
+ 
+<p>
+  <strong>Workouts:</strong>
+  <%= @record.workouts %>
+</p>
+
+<h2>Comments</h2>
+<%= render @record.comments %>
+
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_record_path(@record) %> |
+<%= link_to 'Back', records_path %>
+</center>
